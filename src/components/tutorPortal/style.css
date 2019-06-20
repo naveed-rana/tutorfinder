@@ -1,0 +1,13 @@
+#portal {
+    font-family: Bookman;
+}
+#portalnav p{
+    font-weight: 400;
+    color: #5B6777;
+    font-size: 1.07rem;
+    cursor: pointer;
+}
+#line {
+    border-bottom: 1px solid #D8DBDF;
+    padding: 0px;
+}

@@ -1,0 +1,16 @@
+#afterSignup h5{
+    font-weight: 700;
+}
+#afterSignup p {
+    font-weight: 450;
+    margin: 5px 0px;
+}
+#afterSignup h6 {
+    font-weight: 700;
+    margin: 0px 0px 0px 0px;
+}
+#afterSignup .hoverable {
+    margin-top: 10px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
