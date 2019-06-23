@@ -27,7 +27,6 @@ export const addPost = data => {
       });
   };
 };
-<<<<<<< HEAD
 export const deletePost = id => {
   return dispatch => {
 
@@ -45,22 +44,12 @@ export const deletePost = id => {
 export function getPost() {
   return dispatch => {
     db.collection("posts").onSnapshot(
-=======
-
-export function getPost() {
-  return dispatch => {
-    db.collection("tutors").onSnapshot(
->>>>>>> 776825aa933e27b5261944887961b2b7809093a4
       function(querySnapshot) {
         let datatoStore = [];
         querySnapshot.forEach(function(doc) {
           const data = doc.data();
           const id = doc.id;
           datatoStore.push({ id, ...data });
-<<<<<<< HEAD
-
-=======
->>>>>>> 776825aa933e27b5261944887961b2b7809093a4
           return datatoStore;
         });
         console.log("============datatoStore========================");
@@ -81,7 +70,6 @@ export function getPost() {
     );
   };
 }
-<<<<<<< HEAD
 
 
 // db.collection("cities").doc("DC").delete().then(function() {
@@ -89,5 +77,3 @@ export function getPost() {
 // }).catch(function(error) {
 //   console.error("Error removing document: ", error);
 // });
-=======
->>>>>>> 776825aa933e27b5261944887961b2b7809093a4
