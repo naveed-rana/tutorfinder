@@ -1,0 +1,9 @@
+#howitworks {
+    background-color: #E4E1E1;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+}
+.selector {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}

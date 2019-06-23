@@ -1,0 +1,16 @@
+#button .s6 {
+    background-color: #6E2E2E;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    height: 33px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.25s;
+}
+#button .s6:hover {
+    background-color: white;
+    color: #6E2E2E;
+    border: 1px solid #6E2E2E;
+}

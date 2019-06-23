@@ -17,7 +17,11 @@ export function startLogin(data) {
       .then(users => {
         auth.onAuthStateChanged(user => {
           if (user) {
+<<<<<<< HEAD
             db.collection("users")
+=======
+            db.collection("tutors")
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
               .where("email", "==", data.email)
               .get()
               .then(function(querySnapshot) {
@@ -176,7 +180,11 @@ export function createUser(data) {
       .createUserWithEmailAndPassword(data.email, data.password)
       .then(res => {
         console.log("res", res.user.uid);
+<<<<<<< HEAD
         db.collection("users")
+=======
+        db.collection("tutors")
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
           .add(data)
           .then(function(docRef) {
             const id = docRef.id;

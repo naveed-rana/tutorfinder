@@ -2,7 +2,11 @@ import React from "react";
 import { connect } from "react-redux";
 import { startGetCurrentUser } from "./redux/actions/userActions";
 import App from './App'
+<<<<<<< HEAD
 import CircularProgress from "@material-ui/core/CircularProgress";
+=======
+// import CircularProgress from "@material-ui/core/CircularProgress";
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
 
 
 class CheckingUser extends React.Component {
@@ -27,7 +31,11 @@ class CheckingUser extends React.Component {
     return (
       <div style={{ width: "100%" }}>
         {this.state.loader ? (
+<<<<<<< HEAD
           <div className="loader">
+=======
+          <div className="loader" style={{height:'80vh'}}>
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
             <svg className="circular" viewBox="25 25 50 50">
               <circle
                 className="path"

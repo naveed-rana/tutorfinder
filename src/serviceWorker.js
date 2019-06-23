@@ -8,7 +8,11 @@
 // resources are updated in the background.
 
 // To learn more about the benefits of this model and instructions on how to
+<<<<<<< HEAD
 // opt-in, read http://bit.ly/CRA-PWA
+=======
+// opt-in, read https://bit.ly/CRA-PWA
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
@@ -43,7 +47,11 @@ export function register(config) {
         navigator.serviceWorker.ready.then(() => {
           console.log(
             'This web app is being served cache-first by a service ' +
+<<<<<<< HEAD
               'worker. To learn more, visit http://bit.ly/CRA-PWA'
+=======
+              'worker. To learn more, visit https://bit.ly/CRA-PWA'
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
           );
         });
       } else {
@@ -71,7 +79,11 @@ function registerValidSW(swUrl, config) {
               // content until all client tabs are closed.
               console.log(
                 'New content is available and will be used when all ' +
+<<<<<<< HEAD
                   'tabs for this page are closed. See http://bit.ly/CRA-PWA.'
+=======
+                  'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
               );
 
               // Execute callback

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
@@ -20,4 +21,23 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
+=======
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './getUser';
+import * as serviceWorker from './serviceWorker';
+import store from "./redux/store";
+import { Provider } from "react-redux";
+import "toastr/build/toastr.min.css";
+import "toastr/build/toastr.min.js";
+
+ReactDOM.render(  <Provider store={store}>
+    <App />
+  </Provider>, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
 serviceWorker.unregister();

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from "react";
 import Navbar from "./compnents/Navbar";
 import Footer from "./compnents/Footer";
@@ -32,6 +33,26 @@ import Facebook_Developer from './compnents/Topskills/Facebook_Developer';
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 import { getPost } from "./redux/actions/postAction";
+=======
+import React,{Component} from 'react';
+import './App.css';
+import 'materialize-css/dist/css/materialize.min.css';
+// import  M from 'materialize-css/dist/js/materialize.min.js';
+import Header from './components/Header/header';
+import Middle from './components/middle/index';
+import Login from './components/Registration/login';
+import Portal from './components/Portals/index';
+import TutorPortal from './components/tutorPortal/Tutors';
+import ForgotPassword from './components/Registration/forgotPassword';
+import Navbar from './components/Header';
+import Footer from './components/Footer/index';
+import Aftersignup from './components/completeYourProfile/afterSignup/index';
+import Completetutorprofile from './components/completeYourProfile/completeTutorProfile/index';
+import Completeinstituteprofile from './components/completeYourProfile/completeInstituteProfile/index';
+import { BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import { connect } from "react-redux";
+import {getPost} from './redux/actions/postAction';
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
 
 const RestrictedRoute = ({ component: Component, userStatus, ...rest }) => (
   <Route
@@ -42,7 +63,11 @@ const RestrictedRoute = ({ component: Component, userStatus, ...rest }) => (
       ) : (
         <Redirect
           to={{
+<<<<<<< HEAD
             pathname: "/Login",
+=======
+            pathname: "/signin",
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
             state: { from: props.location }
           }}
         />
@@ -50,18 +75,26 @@ const RestrictedRoute = ({ component: Component, userStatus, ...rest }) => (
     }
   />
 );
+<<<<<<< HEAD
 
 // import './App.css';
 class App extends Component {
   componentWillMount = () => {
    this.props.getPost();
   };
+=======
+class App extends Component {
+  componentDidMount() {
+    this.props.getPost();
+  }
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
   
   render() {
     const { userStatus } = this.props;
     console.log("=======================userStatus=============");
     console.log(userStatus);
     console.log("====================================");
+<<<<<<< HEAD
     return (
       <BrowserRouter>
         <div className="App">
@@ -117,11 +150,46 @@ class App extends Component {
       </BrowserRouter>
     );
   }
+=======
+
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <div className="App">
+            <Route exact path="/" component={Header} />
+            <Route exact path="/" component={Middle} />
+            <Route exact path="/" component={Footer} />
+            <Route path="/signin" component={Login} />
+            <Route path="/forgot" component={ForgotPassword} />
+            <Route path="/portal" component={Portal} />
+            <RestrictedRoute
+              exact
+              path="/tutorportal"
+              component={TutorPortal}
+              userStatus={userStatus}
+            />
+
+            <Route path="/whoyouare" component={Aftersignup} />
+            <Route path="/completetutorprofile" component={Completetutorprofile} />
+            <Route path="/completeinstituteprofile" component={Completeinstituteprofile} />
+          </div>
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+}
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
 }
 const mapStateToProps = state => {
   return {
     userStatus: state.userReducer.userStatus
   };
 };
+<<<<<<< HEAD
 export default connect(mapStateToProps,    { getPost }
   )(App);
+=======
+export default connect(mapStateToProps,{getPost})(App);
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4

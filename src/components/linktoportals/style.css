@@ -1,0 +1,29 @@
+#linktoprtal {
+    background-color: #343f4b;
+    margin: 0px;
+}
+#linktoprtal .s8{
+    height: 49px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+@media only screen and (max-width: 992px) {
+    #linktoprtal .s8 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+#linktoprtal .s8:hover{
+    color: #343f4b;
+    background-color: white;
+    border: 1px solid #343f4b;
+}
+#linktoprtal .s8 h6 {
+    margin-top: 12px;
+    font-weight: 600;
+}

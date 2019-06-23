@@ -39,9 +39,12 @@ export default function(state = initialState, action) {
       return state;
   }
 }
+<<<<<<< HEAD
 
 // db.collection("cities").doc("DC").delete().then(function() {
 //   console.log("Document successfully deleted!");
 // }).catch(function(error) {
 //   console.error("Error removing document: ", error);
 // });
+=======
+>>>>>>> 776825aa933e27b5261944887961b2b7809093a4
