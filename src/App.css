@@ -1,0 +1,35 @@
+.navmar{
+height:10px;
+margin: 0%;
+padding: 0%;
+}
+#nav-mobile{
+  padding: 0%;
+  margin: 0%;
+}
+#navm{
+  height: 10px;
+
+}
+/* img{
+  margin-top: 5%;
+} */
+.row{
+  margin:0%;
+  padding: 0%;
+
+}
+.bor{
+  border-left: 2px;
+  border-left-color: darkslateblue;
+  
+}
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#space{
+  margin-left: 6%;
+}
+#work{
+  background-color: cadetblue;
+}

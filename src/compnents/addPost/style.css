@@ -1,0 +1,71 @@
+/*** Commen Style ***/
+
+.myClr {
+  color: #ff3366;
+}
+
+.myBgClr {
+  background-color: #ff3366;
+}
+
+/* Style for right portin with col-9 => Start */
+
+@media only screen and (max-width: 750px) {
+  .addHead-bg .title {
+    color: black;
+    font-size: 30px;
+  }
+}
+
+.addHead-bg .title {
+  color: darkgray;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.addHead-bg {
+  /* background-Color: #ff3366; */
+  padding: 70px 0px 28px 40px;
+  /* border-bottom-right-radius: 165px 200px; */
+}
+
+.headDiv-fields {
+  margin: 40px 0px 0px 50px;
+  color: #4596f3;
+}
+.myInput-field {
+  width: 100%;
+  margin-top: 5px;
+  padding: 12px 15px;
+  border-radius: 21px;
+  background: none;
+  outline: none;
+  /* font-size: large; */
+  border: 1px solid lightgray;
+  margin-left: 50px;
+}
+
+.myTextarea-field {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px 15px;
+  border-radius: 21px;
+  background: none;
+  outline: none;
+  font-size: large;
+  border: 1px solid lightgray;
+  height: 100px;
+}
+
+.addBtn {
+  margin-top: 15px;
+  padding: 12px 18px;
+  /* background: none; */
+  background-color: #4596f3;
+  color: #ffffff;
+  border-radius: 21px;
+  outline: none;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
